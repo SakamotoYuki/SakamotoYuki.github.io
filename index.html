@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <!--  This site was created in Webflow. http://www.webflow.com  -->
-<!--  Last Published: Mon Oct 05 2020 21:52:35 GMT+0000 (Coordinated Universal Time)  -->
+<!--  Last Published: Mon Oct 05 2020 22:47:50 GMT+0000 (Coordinated Universal Time)  -->
 <html data-wf-page="5f6c3babfd4c1dde133c7004" data-wf-site="5f5da41f6298aa3fb7c5ae52">
 <head>
   <meta charset="utf-8">
@@ -564,15 +564,16 @@ body {
 	$(function() {
 		$.scrollify({
 			section : ".section-1",
+	    easing: "easeOutExpo",
+	    scrollSpeed: 1100,
+			offset : 0,
+	    scrollbars: false,
+	    setHeights: true,
+	    overflowScroll: true,
+	    updateHash: true,
+	    touchScroll:true,
 		});
 	});
-  $(function clickMe() {
-  const button = document.getElementById("button");
-  button.addEventListener("click", event => {
-    	$.scrollify.next();
-    alert("button clicked");
-  });
-});
 </script>
 </body>
 </html>
