@@ -389,7 +389,7 @@ h3 {
 
 .loading_char2 {
   position: absolute;
-  left: 25%;
+  left: 20%;
   bottom: 0%;
   z-index: 199;
   width: 50vh;
@@ -398,7 +398,7 @@ h3 {
 
 .loading_char3 {
   position: absolute;
-  right: 25%;
+  right: 20%;
   bottom: 0%;
   z-index: 199;
   width: 50vh;
