@@ -384,7 +384,7 @@ h3 {
   position: absolute;
   bottom: 0%;
   z-index: 200;
-  max-width: 25vw;
+  width: 45vh;
 }
 
 .loading_char2 {
@@ -392,6 +392,7 @@ h3 {
   left: 25%;
   bottom: 0%;
   z-index: 199;
+  width: 50vh;
   max-width: 30vw;
 }
 
@@ -400,7 +401,7 @@ h3 {
   right: 25%;
   bottom: 0%;
   z-index: 199;
-  max-width: 30vw;
+  width: 50vh;
 }
 
 .socialmedia {
