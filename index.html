@@ -1,5 +1,5 @@
 <!DOCTYPE html><!--  This site was created in Webflow. http://www.webflow.com  -->
-<!--  Last Published: Fri Dec 04 2020 06:09:45 GMT+0000 (Coordinated Universal Time)  -->
+<!--  Last Published: Fri Dec 04 2020 06:27:58 GMT+0000 (Coordinated Universal Time)  -->
 <html data-wf-page="5fc5ff63bad27a5024bb1181" data-wf-site="5fc5ff63bad27a3553bb1180">
 <head>
   <meta charset="utf-8">
@@ -28,19 +28,19 @@ body {
 <body class="body">
   <div data-collapse="medium" data-animation="default" data-duration="400" data-no-scroll="1" data-w-id="475f0136-ee08-de1a-681c-1677cc8867b3" style="opacity:0" role="banner" class="navbar w-nav">
     <nav role="navigation" class="nav-menu w-nav-menu">
-      <a href="#Home_sec" class="nav_link_home w-inline-block">
+      <a href="#" id="home" class="nav_link_home w-inline-block">
         <h2 class="navbar_text left">Home</h2>
       </a>
-      <a href="#Char_sec" class="nav_link_char w-inline-block">
+      <a href="#" id="char" class="nav_link_char w-inline-block">
         <h2 class="navbar_text">Character</h2>
       </a>
-      <a href="#Sys_sec" class="nav_link_sys w-inline-block">
+      <a href="#" id="sys" class="nav_link_sys w-inline-block">
         <h2 class="navbar_text">System</h2>
       </a>
-      <a href="#" class="nav_link_world w-inline-block">
+      <a href="#" id="world" class="nav_link_world w-inline-block">
         <h2 class="navbar_text">World</h2>
       </a>
-      <a href="#" class="nav_link_special w-inline-block">
+      <a href="#" id="spec" class="nav_link_special w-inline-block">
         <h2 class="navbar_text right">Special</h2>
       </a>
     </nav>
@@ -253,6 +253,30 @@ body {
 	    touchScroll:true,
 		});
 	});
+</script>
+  <script>
+$(function clickMe() {
+  const button = document.getElementById("home");
+  button.addEventListener("click", event => {
+    $.scrollify.move("#1");
+  });
+})();
+</script>
+  <script>
+$(function clickMe() {
+  const button = document.getElementById("char");
+  button.addEventListener("click", event => {
+    $.scrollify.move("#2");
+  });
+})();
+</script>
+  <script>
+$(function clickMe() {
+  const button = document.getElementById("sys");
+  button.addEventListener("click", event => {
+    $.scrollify.move("#3");
+  });
+})();
 </script>
 </body>
 </html>
