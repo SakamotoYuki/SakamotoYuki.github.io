@@ -118,13 +118,16 @@ p {
   position: absolute;
   bottom: -5%;
   z-index: 20;
-  margin-right: 35vw;
+  margin-right: 25%;
 }
 
 .right_div {
   position: relative;
-  display: block;
-  margin-left: 60%;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  margin-left: 50%;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
   -webkit-flex-direction: column;
@@ -143,7 +146,7 @@ p {
 .floating-char {
   position: relative;
   z-index: 20;
-  max-width: 50vw;
+  max-width: 90vw;
 }
 
 .pre_reg {
@@ -190,8 +193,9 @@ p {
   align-items: center;
 }
 
-.right_div_sections.pre_reg {
+.right_div_sections.twitter {
   position: relative;
+  max-width: 600px;
   -webkit-box-align: center;
   -webkit-align-items: center;
   -ms-flex-align: center;
@@ -213,6 +217,10 @@ p {
 .image-5 {
   display: inline-block;
   margin-right: 5vw;
+}
+
+.image-7 {
+  max-width: 500px;
 }
 
 .image-8 {
@@ -394,6 +402,13 @@ p {
   background-color: #2a4350;
 }
 
+.footer.fake {
+  position: absolute;
+  bottom: -8%;
+  display: none;
+  height: 95px;
+}
+
 .outerbg_div {
   position: absolute;
   display: block;
@@ -453,7 +468,7 @@ p {
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  margin-bottom: 3vh;
+  margin-bottom: 8vh;
   -webkit-box-pack: center;
   -webkit-justify-content: center;
   -ms-flex-pack: center;
@@ -502,7 +517,7 @@ p {
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  max-width: 45%;
+  max-width: 40%;
   -webkit-box-pack: center;
   -webkit-justify-content: center;
   -ms-flex-pack: center;
@@ -523,7 +538,7 @@ p {
   margin-top: 0px;
   margin-bottom: 0px;
   margin-left: 100px;
-  font-family: Vollkorn, serif;
+  font-family: 'Linbiolinum r', sans-serif;
   color: #fff;
   font-size: 44px;
   line-height: 1;
@@ -533,7 +548,7 @@ p {
 .body {
   display: block;
   overflow: visible;
-  font-family: Vollkorn, serif;
+  font-family: 'Linbiolinum r', sans-serif;
   color: #fff;
 }
 
@@ -617,7 +632,7 @@ p {
 
 .character_name {
   margin-left: -20px;
-  font-family: Vollkorn, serif;
+  font-family: 'Linbiolinum r', sans-serif;
   color: #fff;
   font-size: 45px;
 }
@@ -626,7 +641,7 @@ p {
   margin-top: 0px;
   margin-bottom: 0px;
   margin-left: 100px;
-  font-family: Vollkorn, serif;
+  font-family: 'Linbiolinum r', sans-serif;
   color: #fff;
   font-size: 44px;
   line-height: 1;
@@ -808,7 +823,8 @@ p {
 }
 
 .div-block-4 {
-  max-width: 40%;
+  max-width: 35%;
+  margin-top: -5%;
 }
 
 .image-15 {
@@ -821,19 +837,19 @@ p {
 
 .twitter-embed {
   position: absolute;
-  bottom: 20%;
+  bottom: 12%;
   overflow: hidden;
   width: 75%;
-  height: 50%;
+  height: 60%;
 }
 
 .coming_soon {
   position: absolute;
   left: 30%;
-  right: 35%;
+  right: 30%;
   bottom: 25%;
   z-index: 50;
-  max-width: 700px;
+  max-width: 650px;
 }
 
 .footer_content {
@@ -913,7 +929,7 @@ p {
     width: 80vw;
   }
 
-  .right_div_sections.pre_reg {
+  .right_div_sections.twitter {
     margin-top: 15%;
   }
 
@@ -1223,4 +1239,19 @@ p {
   .ss_icon {
     max-height: 17px;
   }
+}
+
+@font-face {
+  font-family: 'Linbiolinum r';
+  src: url('../fonts/LinBiolinum_RB.ttf') format('truetype');
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Linbiolinum r';
+  src: url('../fonts/LinBiolinum_R.otf') format('opentype');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
 }
