@@ -146,7 +146,7 @@ p {
 .floating-char {
   position: relative;
   z-index: 20;
-  max-width: 90vw;
+  max-width: 40vw;
 }
 
 .pre_reg {
@@ -904,16 +904,22 @@ p {
 
 .footer_disclaimer p {
   margin-bottom: 3px;
+  font-weight: 400;
 }
 
 .footer_disclaimer h6 {
   margin-top: 5px;
   margin-bottom: 3px;
   font-size: 14px;
+  font-weight: 400;
 }
 
 .ss_icon {
   max-height: 30px;
+}
+
+.heading-5 {
+  font-weight: 400;
 }
 
 @media screen and (max-width: 991px) {
